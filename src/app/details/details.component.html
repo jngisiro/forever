@@ -1,0 +1,48 @@
+<app-loading *ngIf="isloading"></app-loading>
+
+<div *ngIf="!isloading" id="details" class="container">
+  <br />
+  <div class="columns">
+    <div class="column is-one-third">
+      <figure class="image image is-square">
+        <img [src]="product.imageThumb" />
+      </figure>
+
+      <p>
+        I'm an approved agent for Forever Living Products. Contact Me For
+        Inquiries and Deliveries
+      </p>
+    </div>
+    <div class="column">
+      <p class="title">{{ product?.name }}</p>
+
+      <p>{{ product.description }}</p>
+
+      <br />
+
+      <div id="benefits">
+        <div class="subtitle">Benefits of {{ product.name }}</div>
+        <ul>
+          <li *ngFor="let item of product.benefits">{{ item }}</li>
+        </ul>
+      </div>
+      <br />
+      <div id="ingredients">
+        <div class="subtitle">
+          Ingredients
+        </div>
+        <p>
+          <span *ngFor="let item of product.ingredients">{{
+            item + ",  "
+          }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact">
+  <a href="tel:+256778659493"><i class="fa fa-phone"></i></a>
+  <a href="mailto:kiconcoagibail@gmail.com"><i class="fa fa-envelope"></i></a>
+  <a href="https://wa.me/+256778659493"><i class="fa fa-whatsapp"></i></a>
+</div>

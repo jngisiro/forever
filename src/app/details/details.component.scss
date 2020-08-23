@@ -1,0 +1,33 @@
+@media only screen and (max-width: 800px) {
+  #details {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #details {
+    padding: 20px;
+  }
+}
+
+#details {
+  margin-bottom: 70px;
+}
+
+#contact {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  i {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #000;
+    text-shadow: 0 0 1px #000;
+    cursor: pointer;
+    :hover {
+      color: red;
+    }
+  }
+}
