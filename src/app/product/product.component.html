@@ -7,7 +7,7 @@
   <div class="card-content">
     <div class="media-content">
       <p class="subtitle">{{ product.name }}</p>
-      <p class="subtitle is-6">@forever</p>
+      <p class="subtitle is-6">@{{ product.category }}</p>
     </div>
     <div class="content">
       {{ product.description | summarize }} ...

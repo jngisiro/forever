@@ -18,14 +18,14 @@
         </div>
         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active">
+            <a routerLink="/" class="navbar-item is-active">
               Product Catalog
             </a>
             <a class="navbar-item">
-              Categories
+              Subscribe
             </a>
             <a class="navbar-item">
-              About Agent
+              Admin Login
             </a>
             <!-- <span class="navbar-item">
               <a class="button is-primary is-inverted">
@@ -60,13 +60,34 @@
     <nav class="tabs">
       <div class="container">
         <ul>
-          <li class="is-active"><a>Overview</a></li>
-          <li><a>Aloe Drinks</a></li>
-          <li><a>Nutritionals</a></li>
-          <li><a>Weight Management</a></li>
-          <li><a>Bee Products</a></li>
-          <li><a>Personal &amp; Skin Care</a></li>
-          <li><a>Infinite by Forever Living</a></li>
+          <li
+            routerLinkActive="is-active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a routerLink="/">Overview</a>
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="category/aloe-drinks">Aloe Drinks</a>
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="category/nutritionals">Nutritionals</a>
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="category/weight-management">Weight Management</a>
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="category/bee-products">Bee Products</a>
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="category/personal-and-skincare"
+              >Personal &amp; Skin Care</a
+            >
+          </li>
+          <li routerLinkActive="is-active">
+            <a routerLink="category/infinite-living"
+              >Infinite by Forever Living</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
