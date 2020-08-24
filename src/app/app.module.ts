@@ -12,6 +12,7 @@ import { DetailsComponent } from './details/details.component';
 import { LoadingComponent } from './loading/loading.component';
 import { CategoryComponent } from './category/category.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SubscribeComponent } from './subscribe/subscribe.component';
     LoadingComponent,
     CategoryComponent,
     SubscribeComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
