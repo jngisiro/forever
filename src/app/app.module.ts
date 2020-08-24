@@ -10,6 +10,9 @@ import { SummarizePipe } from './summarize.pipe';
 import { IndexComponent } from './index/index.component';
 import { DetailsComponent } from './details/details.component';
 import { LoadingComponent } from './loading/loading.component';
+import { CategoryComponent } from './category/category.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { LoadingComponent } from './loading/loading.component';
     IndexComponent,
     DetailsComponent,
     LoadingComponent,
+    CategoryComponent,
+    SubscribeComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
