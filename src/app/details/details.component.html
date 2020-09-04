@@ -17,7 +17,7 @@
     <div class="column">
       <p class="title">{{ product?.name }}</p>
 
-      <p>{{ product.description }}</p>
+      <p [innerHtml]="product.description"></p>
 
       <br />
       <hr />
@@ -30,9 +30,7 @@
       <br />
       <hr />
       <div id="ingredients">
-        <div class="subtitle">
-          Ingredients
-        </div>
+        <div class="subtitle">Ingredients</div>
         <p>
           <span *ngFor="let item of product.ingredients">{{
             item + ",  "
